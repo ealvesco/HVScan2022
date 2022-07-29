@@ -1,0 +1,11 @@
+#!/bin/sh -e		
+#root  -l -b -q  "FitData.C(\"barrel\")"		-j8
+#root  -l -b -q  "FitData.C(\"endcap\")"		-j8
+#root  -l -b -q  "pngProducer.C(\"barrel\")"		-j8
+#root  -l -b -q  "pngProducer.C(\"endcap\")"		-j8
+root  -l -b -q  "MakeASummary.C(\"barrel\",true)"		-j8
+root  -l -b -q  "MakeASummary.C(\"endcap\",true)"		-j8
+root  -l -b -q  "MakeASummary1.C(\"barrel\",true)"		-j8
+root  -l -b -q  "MakeASummary1.C(\"endcap\",true)"		-j8
+root  -l -b -q  "DrawingOUFlow.C(true)"		-j8
+root  -l -b -q  "DrawingOUFlow.C(true)"		-j8
